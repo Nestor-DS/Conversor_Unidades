@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 public class temperatura extends AppCompatActivity {
 
-
     private EditText editTextCelsius;
     private Button buttonConvertToFahrenheit;
     private Button buttonConvertToKelvin;
@@ -48,9 +47,6 @@ public class temperatura extends AppCompatActivity {
                 }
             }
         });
-
-
-
     }
 
     public void irMain (View view){
