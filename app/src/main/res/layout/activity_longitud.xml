@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/ic_launcher_background"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="40dp">
+
+        <EditText
+            android:id="@+id/editTextValor"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLongitud"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Longitud"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FDF2F2"
+            android:textColorHint="#3C3535"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/textViewUnidadInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextValor"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="243dp"
+            android:text="Unidad inicial:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerUnidadInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUnidadInicial"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewUnidadFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerUnidadInicial"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="243dp"
+            android:text="Unidad final:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerUnidadFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUnidadFinal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+
+        <Button
+            android:id="@+id/buttonConvertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerUnidadFinal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Convertir" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonConvertir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="503dp"
+            android:layout_marginEnd="149dp"
+            android:backgroundTint="#F8B089"
+            android:onClick="irMain"
+            android:tint="#00773434"
+
+            app:srcCompat="@drawable/exit" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
